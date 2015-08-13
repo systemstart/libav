@@ -1,0 +1,26 @@
+Source: libavbmd
+Maintainer: alexander <github@systemstart.net>
+Section: misc
+Priority: optional
+Standards-Version: 3.9.3
+Build-Depends:  
+	debhelper (>= 8),
+	libbmd0,
+	yasm,
+	libmp3lame-dev,
+	libfaac-dev,
+	libx264-dev,
+	pkg-config
+
+Package: libavbmd
+Depends:
+	libbmd0,
+	libmp3lame0,
+	libfaac0,
+	libx264-120,
+	${shlibs:Depends}, 
+	${misc:Depends}
+Architecture: any
+Description: libav branch with bmd support
+	this is a libav branch which supports libbmd
+
