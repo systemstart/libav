@@ -3,7 +3,7 @@
 	dh $@
 
 override_dh_auto_configure:
-	./configure --enable-libx264 --enable-gpl --enable-libmp3lame --enable-libbmd --enable-libfaac --enable-nonfree
+	./configure --enable-libx264 --enable-gpl --enable-libmp3lame --enable-libfaac --enable-nonfree
 
 override_dh_auto_test:
 
